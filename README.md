@@ -1,1 +1,1 @@
-#css-traiing responsive layout
+#css-training responsive layout
