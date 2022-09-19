@@ -1,0 +1,647 @@
+/* Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+/* Header */
+header {
+    background-color: #262626;
+    display: flex;
+    justify-content: flex-end;
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.vl {
+    border-left: 2px solid grey;
+    height: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    padding: 2% 1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Intro Section */
+
+
+
+.intro,
+.video,
+.laptop,
+.why,
+.books,
+.about {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    position: relative;
+    background-image: url("../assets/images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    object-position: bottom;
+
+    right: 0px;
+    margin: 0px;
+}
+
+.section-content {
+    width: 80%;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro .logo {
+    width: 8rem;
+}
+
+.section-content {
+    padding: 3rem 0;
+}
+
+.intro .section-content * {
+    margin-top: 1.5rem;
+    color: whitesmoke;
+
+}
+
+.intro .section-content h1 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.intro .section-content p {
+    font-weight: 600;
+}
+
+.section-content img {
+    width: 60%;
+
+}
+
+button {
+    display: block;
+    width: 12rem;
+    height: 4rem;
+    margin: auto;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: large;
+    color: white;
+    background-color: red;
+    border: none;
+}
+
+h1,
+h2,
+p {
+    margin: 1.5rem 0;
+    line-height: 1.5;
+}
+
+.feature p {
+    color: rgba(38, 37, 37, 0.8);
+}
+
+.features {
+    margin-top: 4rem;
+}
+
+.features .feature-item {
+    text-align: center;
+    width: 25%;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.39;
+    letter-spacing: 0.9px;
+    color: #262525;
+}
+
+.video * {
+    margin-top: 1.5rem;
+}
+
+.video .section-content h1 {
+    color: red;
+    font-size: 28px;
+}
+
+.video .section-content p {
+    margin: 4rem 0;
+    color: whitesmoke;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.video .section-content button {
+    width: 18rem;
+}
+
+.team * {
+    margin-top: 0.5rem;
+}
+
+.team h2 {
+    font-size: 18px;
+}
+
+.team .row {
+    width: 50%;
+
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member .name {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.team-member p {
+
+    margin: 0;
+    font-size: 16px;
+}
+
+.laptop {
+    color: red;
+    font-size: large;
+    position: relative;
+    font-weight: 800;
+    background-size: cover;
+    object-fit: cover;
+    letter-spacing: 1.5px;
+}
+
+.mobile {
+    display: none;
+}
+
+.laptop .section-content {
+    width: 100%;
+    height: 100%;
+}
+
+.laptop .section-content img {
+    margin-top: 50px;
+    top: 8rem;
+    width: 80%;
+}
+
+.feature-2 .grad-right {
+    color: whitesmoke;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(255, 0, 0));
+    height: 80px;
+}
+
+.grad-right h1 {
+    padding: 1.5rem 15rem;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.feature-2 {
+    position: relative;
+
+}
+
+.feature-2-item {
+    margin-left: 10rem;
+    justify-content: space-between;
+}
+
+.grad-right+.feature-2-item p {
+    width: 40rem;
+    line-height: 1.5;
+    color: rgba(38, 37, 37, 0.8);
+    font-size: 18px;
+}
+
+.grad-right+.feature-2-item img {
+    width: 35rem;
+    position: absolute;
+    right: 0;
+}
+
+.feature-2 .grad-left {
+    color: whitesmoke;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(255, 0, 0));
+    height: 80px;
+}
+
+.grad-left h1 {
+    padding-top: 1.5rem;
+    margin-left: 58%;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.grad-left+.feature-2-item {
+    position: relative;
+}
+
+.grad-left+.feature-2-item .content {
+    width: 50rem;
+    line-height: 1.5;
+    color: rgba(38, 37, 37, 0.8);
+    font-size: 18px;
+    margin-left: 55%;
+}
+
+.grad-left+.feature-2-item img {
+    width: 35rem;
+    position: absolute;
+    top: -2rem;
+    left: -5rem;
+}
+
+
+/* why section */
+.why {
+    margin-top: 5rem;
+
+}
+
+.why .section-content {
+    width: 90%;
+}
+
+
+.why-item {
+
+    background-color: whitesmoke;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 1rem;
+    margin: 0.5rem 1rem;
+    min-height: 20rem;
+    box-shadow: 0px 20px 30px 0 rgb(40 40 40 / 18%);
+}
+
+.why-item img {
+    width: 4rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.why-item-content {
+    text-align: left;
+    margin: 0.5rem 2rem;
+    min-height: 16rem;
+}
+
+.why-item-content h2 {
+    color: #262525;
+    font-size: 18px;
+}
+
+.why-item-content p {
+    color: rgba(38, 37, 37, 0.8);
+}
+
+.why h1 {
+    color: red;
+}
+
+
+/* description section */
+.description * {
+    margin-top: 2rem;
+}
+
+.description h1 {
+    font-size: 30px;
+    letter-spacing: 0.5rem;
+    word-spacing: 0.5rem;
+}
+
+.description p {
+    color: rgba(38, 37, 37, 0.8);
+    line-height: 1.5;
+}
+
+.description button {
+    width: 18rem;
+}
+
+/* books */
+.books {
+    color: whitesmoke;
+    background-image: url("../assets/books/banner.png");
+}
+
+.books-list {
+    margin-top: 4rem;
+}
+
+.book {
+
+    font-size: 18px;
+    font-weight: 700;
+    height: 20rem;
+    word-wrap: break-word;
+}
+
+.book img {
+    width: 40%;
+}
+
+/* feature 3 */
+
+.feature-3 {
+    background-color: #EBEBEB;
+    ;
+    text-align: center;
+}
+
+.parent-box {
+    margin-top: 3rem;
+}
+
+
+.feature-3-box img {
+    width: 25%;
+}
+
+.feature-3-box {
+    justify-content: center;
+}
+
+.feature-3-box div {
+    width: 25%;
+    height: 15rem;
+    margin: 1rem 1rem;
+    background-color: whitesmoke;
+    padding: 3.5rem;
+    font-weight: 800;
+    font-size: 20px;
+
+
+}
+
+.about {
+    background-image: url("../assets/books/banner.png");
+}
+
+.about .logo {
+    width: 10%;
+    margin-top: 2rem;
+}
+
+.guarentee-list {
+
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    background-color: white;
+
+}
+
+.guarentee-item {
+    text-align: left;
+    padding: 1rem 1rem;
+    width: 100%;
+    font-size: 18px;
+}
+
+.guarentee-item img {
+    margin: 0 2rem;
+    width: 10%;
+}
+
+/*  footer */
+
+.footer {
+    background-color: #262525;
+}
+
+
+.footer ul {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 40%;
+    width: 20%;
+    flex-direction: row;
+    list-style-type: none;
+    color: #EBEBEB;
+}
+
+.vl-2 {
+    border-left: 2px solid grey;
+    height: 20px;
+
+}
+
+.footer ul li {
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+
+    .row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature-item {
+        margin-top: 2rem;
+    }
+
+    .laptop img {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .laptop-content {
+        width: 100%;
+        margin: auto;
+    }
+
+    .laptop .laptop_content h2 {
+        font-size: 12px;
+
+    }
+
+    .laptop .laptop-content p {
+        font-size: 14px;
+        font-weight: normal;
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    .feature-2 .grad-right {
+        height: 100px;
+    }
+
+    .grad-right h1 {
+        padding: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .feature-2-item {
+        width: 100%;
+        margin: auto;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+
+    }
+
+    .grad-right+.feature-2-item .feature-2-mobile {
+
+        position: relative;
+        margin-right: 0;
+        top: -50px;
+        width: 20rem;
+
+    }
+
+    .grad-right+.feature-2-item p {
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .feature-2 .grad-left {
+        height: 100px;
+    }
+
+    .grad-left h1 {
+        margin-left: 0;
+        padding: 2rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .feature-2-laptop {
+        flex-direction: column;
+    }
+
+    .grad-left+.feature-2-item img {
+
+        position: relative;
+        padding: 1rem 0;
+        width: 80%;
+        top: -2rem;
+        left: auto;
+        right: auto;
+        display: block;
+        margin: auto;
+
+    }
+
+    .grad-left+.feature-2-laptop .content {
+        list-style-position: outside;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .content ul {
+        margin: 2rem;
+        text-align: left;
+    }
+
+    .grad-right+.feature-2-item .ipad {
+        position: relative;
+        width: 90%;
+        margin: auto;
+        top: -2rem;
+    }
+
+    .why .section-content {
+        width: 100%;
+    }
+
+    .why .section-content h1,
+    .why .section-content p {
+        padding: 0 3rem;
+    }
+
+    .why-item {
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .why-item-content {
+        text-align: center;
+    }
+
+    .feature-3-box div {
+        width: 100%;
+        
+    }
+    .about .section-content {
+        width: 100%;
+    }
+    .about .logo{
+        width: 8rem;
+    }
+    .guarentee-item img{
+        width: 8rem;
+    }
+    .guarentee-item {
+        text-align: center
+    }
+    .footer .row {
+        width: 80%;
+    }
+    .footer ul {
+        display: flex;
+        margin: 30px auto;
+        width: 80%;
+        
+        list-style-type: none;
+        color: #EBEBEB;
+    }
+}
